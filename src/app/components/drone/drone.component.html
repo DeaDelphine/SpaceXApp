@@ -1,0 +1,23 @@
+<div class="container">
+  <nav class="navbar align-item-center d-flex">
+    <h2 >Listes des drones</h2>
+  </nav>
+
+  <div class="container container-fluid mt-3">
+    <div class="container d-flex">
+      <div class="row justify-content-center">
+        <ng-container *ngFor="let item of drones">
+          <div class="card" style="width: 22rem;">
+            <div class="card-body">
+              <h5 class="card-title">{{item.modele }} </h5>
+              <p class="card-text">{{item.poids}}</p>
+              <p class="card-text">{{item.porteeMax}}</p>
+              <p class="card-text">{{item.capaciteMaxBat}}</p>
+              <a href="#" class="btn btn-danger">Acheter</a>
+            </div>
+          </div>
+        </ng-container>
+      </div>
+    </div>
+  </div>
+</div>
